@@ -1,0 +1,33 @@
+\documentclass{lecturenotes}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{patterns}
+\renewcommand{\lectureHeader}{Vorlesungsmitschriften}
+\renewcommand{\lectureTitle}{Mikorökonomik A}
+\renewcommand{\lectureSubtitle}{bei Tymon Tatur}
+\renewcommand{\authorname}{Fabian}
+\renewcommand{\onlineadress}{https:/www.obda-trivial.de}
+\renewcommand{\emailadress}{git-fabus@uni-bonn.de}
+
+\input{symbols}
+\bibliography{bibliography.bib}
+
+\begin{document}
+\frontmatter
+\maketitle
+\include{sections/preface}
+\tableofcontents
+\listoflectures
+\include{sections/introduction}
+
+\mainmatter
+\include{sections/chapter1}
+\appendix
+\include{sections/appendix1}
+\include{sections/appendix2}
+\backmatter
+\printbibliography
+\printnoidxglossary[title = {Symbolliste}, type = symbols]
+\printindex
+\end{document}
