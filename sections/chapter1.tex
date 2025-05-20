@@ -1518,3 +1518,75 @@ Oft ist es natürlich, technologische Veränderungen mit Hilfe der resultierende
 
 
 \subsection{Das Produzentenproblem}
+
+Kennen wir nun die Kostenfunktion, können wir nun unser Maximierungsproblem als Funktion des Outputgutes formulieren
+
+\begin{construction}[Produzentenproblem mit Kostenfunktion]
+	Die Profite sind $py - c(y)$, womit wir folgendes Problem lösen:
+	\[
+		\max_{y} p \cdot  y - c(y)
+		.\]
+\end{construction}
+
+Wir wissen bereits, aus unseren vorherhigen Problem, dass für eine innere Lösung mit $y > 0$ gelten muss, dass
+\[
+	\operatorname{MC} (y) = p
+	.\]
+Wenn eine positive Menge produziert wird, muss die Menge so gewählt
+werden, dass der Preis den Grenzkosten entspricht.
+
+\begin{remark}
+	Es ist nicht zwingend optimal, überhaupt etwas zu produzieren.
+\end{remark}
+
+Da wir die Kostenfunktion unterteilt haben in $c(y) = F + \operatorname{VC}(y)$, ergibt sich, wenn der Produzent gar nichts produziert, dass
+\begin{align*}
+	-F                    & \iff py - c(y)                  \\
+	0                     & \iff py -  \operatorname{VC}(y) \\
+	\operatorname{AVC}(y) & \iff p
+	.\end{align*}
+Demnach lohnt es sich zu produzieren, wenn $p > \operatorname{AVC}(y)$, anderenfalls können die Gewinne nur durch einstellen der Produktion garantiert werden.
+
+
+\noindent Wenn wir diese Überlegungen zusammenführen, erkennen wir, dass die
+Angebotskurve $S(p)$ der Grenzkostenkurve entspricht, wenn, für $y$ mit
+$\operatorname{MC}(y) = p$ gilt $p >\operatorname{AVC}(y)$, und nicht angeboten wird, wenn
+$p <AVC (y )$.
+
+
+
+\begin{example}
+	Betrachten wir die Kostenfunktion einer Firma, die gegeben durch
+	\[
+		C(y) = y^2 + 4y + 34
+	\]
+	ist. Wir fragen uns,
+	\begin{enumerate}
+		\item wie die Angebotskurve aussieht;
+		\item was die optimale Produktionsmenge für $p=50$, ist.
+	\end{enumerate}
+	Da das Unternehmen die Produktionsmenge so, wählt, dass $p = \operatorname{MC}(y)$, woraus sich die Angebotskurve ergibt:
+	\[
+		p = 2y + 4
+		,\]
+	weiter gilt die Bedingung $\operatorname{MC}(y) > \operatorname{AVC}(y)$, welche sagt, dass die Produktion nur stattfindet, wenn
+	die Grenzkosten die durchschnittlichen variablen Kosten übersteigen.
+
+	\begin{center}
+		tbd
+	\end{center}
+\end{example}
+
+
+Da wir nun die Angebotskurve bereits erwähnt haben, lässt sich analog zur Nachfragekurve auch das Konzept der Konsumentenrente auf den Produzenten übertragen.
+
+\begin{definition} \index{Produzentenrente}
+	Die Fläche unter der Preisgeraden und oberhalb der Angebotskurve
+	entspricht der \defemph{Produzentenrente}.
+\end{definition}
+
+\begin{remark}
+	Die Produzentenrente ist also bis auf eine Konstante gleich den
+	Gewinnen.
+\end{remark}
+
