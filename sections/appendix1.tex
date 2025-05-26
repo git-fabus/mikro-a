@@ -1110,10 +1110,126 @@
 		      Dies erklärt das empirische Phänomen, dass in kurzen Rezessionen die durchschnittliche Produktivität pro Stunde ansteigen kann.
 	\end{enumerate}
 \end{solution}
+\section{Blatt 6: Midterm}
+
+\begin{center}
+	tbd
+\end{center}
+
+\section{Blatt 7}
+
+\begin{question}
+	Uber die Kostenfunktion der Firma GreenPaper ist Folgendes bekannt:
+	\begin{itemize}
+		\item Die Durchschnittskostenfunktion $AC(q)$ hat ein einziges lokales Minimum und ein einziges
+		      lokales Maximum.
+		\item Das lokale Minimum liegt bei $q = 20$ und $AC(20) = 5$
+		\item Das lokale Maximum liegt bei $q = 50$ und $AC(50) = 7$.
+	\end{itemize}
+	Was können Sie über die Form und Werte der Grenzkostenfunktion $MC$ sagen?
+
+\end{question}
+
+\begin{solution}
+	Wir wissen, dass $AC(y) = MC(y)$, falls $y$ ein Extrempunkt von $AC$ ist,da
+	\[
+		\frac{\mathrm{d} AC}{\mathrm{d}} = 0 \iff \frac{-C(y) + C'(y) y}{y^2} = 0 \iff C'(y) = \frac{C(y)}{y}
+		.\]
+	Demnach wissen wir, dass für $q=20$ und $q=50$ jeweils gilt, dass:
+	\[
+		MC(20) = 5 \quad \text{und} \quad MC(50) = 7
+		.\]
+	Die Durchschnittsksoten sind monotonsteigend zwischen $q=20$ und $q=50$, monoton fallend nach $q=50$ und monoton fallend zu $q=0$ und $q=20$.
+	Falls $AC$ sinken, dann gilt $MC \le  AC$. Analog gilt falls $AC$ steigen, dann gilt: $MC \ge AC$
+\end{solution}
 
 
+\begin{question}
+	Aus Umweltschutzgründen wird die Verwendung bestimmter Materialien in Batterien verboten. Dieses
+	Verbot hat zwei Effekte:
+	\begin{enumerate}
+		\item Die Herstellung von Batterien wird kostspieliger. Daher sind Produzenten nur bereit, bei
+		      jedem gegebenen Preis eine geringere Menge anzubieten als vor dem Verbot.
+		\item Die Qualität der nach dem Verbot produzierten Batterien ist geringer. Deshalb sind Konsumenten bei jedem gegebenen Preis bereit, weniger Batterien zu kaufen als vor dem Verbot.
+	\end{enumerate}
+	Was können Sie über die Änderung von Gleichgewichtspreis und -menge auf dem Batteriemarkt nach dem Verbot sagen – ohne weitere Informationen?
+\end{question}
+\begin{solution}
+	\begin{enumerate}
+		\item Das Angebot sink, da die Herstellung tuerer wird, daher sind die Gleichgewichtsmenge, weshalb sich die Kurve nach links verschiebt.
+		      Über den Gleichgewichtspreis können wir nichts aussagen, da es abhängig von der Stärke der Verschiebung ist.
+		\item Die Nachfrage sinkt, da die Qualität der Produkte schlechter wird, also sinkt die Gleichgewichtsmenge
+		      Über den Gleichgewichtspreis kann wieder nichts gesagt werden.
+	\end{enumerate}
+\end{solution}
 
+\begin{question}
+	Nehmen Sie an, die Nutzenfunktion $u(x, R) = v(x)+R$ repräsentiert die Präferenzen von Konsumenten bezüglich Wunderkugeln $x$ und Ausgaben für andere Süßigkeiten $R$, wobei \[v(x) = 50x - 25x^2.\] Es gebe 100 solcher Konsumenten.
+	Der Preis für $x$ sei $p$, der Preis für $R$ sei 1. Die Konsumenten haben alle ein unterschiedliches Einkommen, jeder von ihnen habe aber mindestens 13 Geldeinheiten Einkommen zur Verfügung, also $m \geq 13$.
+	\begin{enumerate}
+		\item Berechnen Sie die Nachfrage der Konsumenten nach $x$ bei gegebenem Preis $p$.
 
+		\item Sei ferner eine Angebotsfunktion gegeben durch $S(p) = 2p$. Berechnen Sie den markträumenden Preis.
+
+		\item Der Staat führt eine Steuer mit dem Steuersatz $t = 10$ (Euro/Mengeneinheit) ein. Berechnen Sie den neuen Gleichgewichtspreis und das gesamte Steueraufkommen.
+
+		\item Anstatt der Steuer wird jetzt ein Maximalpreis von $p = 20$ Euro eingeführt. Was erwarten Sie wird passieren?
+	\end{enumerate}
+
+\end{question}
+\begin{solution}
+	\begin{enumerate}
+		\item	Wir maximieren $u(x,R) = v(x)+R = (50x-25x^2)+R$ unter der Nebenbedingung $px+R \le m$.
+		      Umstellen und einsetzen der Nebenbedingung ergibt:
+		      \[
+			      u(x) = 50x-25x^2 + (m-px)
+			      .\]
+		      Die Bedingung erster Ordnung ergibt sich als:
+		      \[
+			      (50-p)-50x = 0 \iff x^* = \frac{50-p}{50}
+			      .\]
+		      Damit ergibt sich als Lösung:
+		      \[
+			      x^* = \begin{cases}
+				      \frac{50-p}{50} = 1-\frac{p}{50} & \text{falls } 0 \le p < 50 \\
+				      0                                & \text{falls } p \ge 50
+			      \end{cases}
+			      .\]
+		      Natürlich funktionieren auch andere Lösungswege, wie
+		      \[
+			      MRS = \frac{p_1}{p_2}
+			      .\]
+		\item Wir wissen, dass im Gleichgewicht $X=S$ gelten muss, also folgt:
+		      \[
+			      100-2p^* = 2p^* \implies p^* = \frac{100}{4} = 25
+			      .\] Damit ist die nachgefragte Menge $q^*= D(p^*) = 50$
+		\item Nun verändert sich unsere Nachfrage und wir erhalten:
+		      \[
+			      100-2p^* = 2p^* - 20 \implies p^* = \frac{120}{4} = 30
+			      .\]
+		\item Analog ergibt sich für $X(25) = S(25) = 50$. Unser $p_{\max} = 20$ folgt, dass es einen Nachfrageüberschuss gibt, denn:
+		      \[
+			      X(20) = 60 \quad \text{und} \quad S(20) = 40
+			      .\]
+		      Demnach ist der Markt ineffizient.
+
+	\end{enumerate}
+\end{solution}
+
+\begin{question}
+	Eine kleine Steuer von $t$ wird in dem Markt für Covfefe eingeführt, den die Produzenten zahlen. Was
+	können Sie über den Effekt auf den Preis den die Konsumenten zahlen vorhersagen wenn die Elastizität
+	des Angebots ungefähr 3 ist und eine Senkung des Preises um 1\% die Nachfrage um 0.75\% erhöht?
+
+\end{question}
+\begin{solution}
+
+	Wir berehnen:
+	\[
+		\frac{\epsilon_S}{\epsilon_S- \epsilon_D} = \frac{3}{3- \frac{3}{4}} = 0.8
+		.\]
+
+\end{solution}
 \clearpage
 \section{Lösungen}
 
