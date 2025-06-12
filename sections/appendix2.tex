@@ -23,3 +23,134 @@
 	\]
 \end{definition}
 
+
+
+
+
+
+\chapter{Nützliche Lösungswege}
+
+\section{Grundmodell: partielles Marktgleichgewicht}
+
+Gegeben seien:
+\begin{itemize}
+    \item Nachfragefunktion \( D(p) \)
+    \item Angebotsfunktion \( S(p) \)
+\end{itemize}
+
+Das Marktgleichgewicht ist definiert als der Preis \( p^* \), bei dem gilt:
+\[
+D(p^*) = S(p^*)
+\]
+
+Die Gleichgewichtsmenge ergibt sich durch Einsetzen von \( p^* \) in eine der beiden Funktionen:
+\[
+Q^* = D(p^*) = S(p^*)
+\]
+
+\subsection*{Beispielhafte lineare Funktionen}
+\[
+D(p) = a - b p, \qquad S(p) = c + d p
+\]
+
+Gleichgewicht:
+\[
+a - b p^* = c + d p^*
+\]
+\[
+\Rightarrow p^* = \frac{a - c}{b + d}
+\]
+\[
+Q^* = D(p^*) = a - b p^*
+\]
+
+\section{Offener Markt mit Weltmarktpreis}
+
+Der Preis \( p_w \) ist exogen gegeben.
+Im Gleichgewicht:
+\begin{itemize}
+    \item Konsumentenpreis: \( p_w \)
+    \item Produzentenpreis: \( p_w \)
+    \item Importe:
+    \[
+    M = D(p_w) - S(p_w)
+    \]
+\end{itemize}
+
+\section{Markt mit Zoll}
+
+Ein Zoll in Höhe von \( z \) erhöht den Konsumentenpreis:
+\[
+p_C = p_w + z
+\]
+Produzenten erhalten weiterhin:
+\[
+p_P = p_w
+\]
+Importmenge:
+\[
+M_z = D(p_w + z) - S(p_w)
+\]
+
+Zolleinnahmen des Staates:
+\[
+T = z \times M_z
+\]
+
+\section{Markt mit Importquote}
+
+Die Importe sind auf eine maximale Menge \( M_{\text{max}} \) begrenzt.
+
+Der inländische Gleichgewichtspreis \( p_Q \) ergibt sich aus:
+\[
+D(p_Q) - S(p_Q) = M_{\text{max}}
+\]
+Lösung:
+\[
+p_Q = \text{der Preis, der obige Gleichung erfüllt.}
+\]
+
+Anschließend:
+\begin{itemize}
+    \item Konsumentenpreis: \( p_Q \)
+    \item Produzentenpreis: \( p_Q \)
+    \item Konsummenge: \( D(p_Q) \)
+    \item Produktionsmenge: \( S(p_Q) \)
+    \item Importe: \( M_{\text{max}} \)
+\end{itemize}
+
+\section{Berechnung der Wohlfahrtsgrößen (optional)}
+
+\subsection*{Konsumentenrente}
+\[
+KR = \int_0^{D(p)} \left[P(Q) - p \right] \, dQ
+\]
+
+\subsection*{Produzentenrente}
+\[
+PR = \int_0^{S(p)} \left[p - C(Q) \right] \, dQ
+\]
+
+\subsection*{Zolleinnahmen}
+\[
+T = z \times M_z
+\]
+
+\subsection*{Deadweight Loss (Wohlfahrtsverlust)}
+Wohlfahrtsverluste ergeben sich aus der Reduktion von Konsum und Handel im Vergleich zum Freihandel.
+
+\section{Zusammenfassung der Rechenwege}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+Fall & Gleichung zur Preisfindung & Importmenge \\ \midrule
+Autark       & \( D(p) = S(p) \)                            & 0                         \\
+Freihandel   & exogener Preis \( p_w \)                     & \( D(p_w) - S(p_w) \)     \\
+Zoll \( z \) & Konsumentenpreis \( p_C = p_w + z \)         & \( D(p_w + z) - S(p_w) \) \\
+Quote        & \( D(p_Q) - S(p_Q) = M_{\text{max}} \)       & \( M_{\text{max}} \)      \\ \bottomrule
+\end{tabular}
+\caption{Formale Berechnungen des partiellen Gleichgewichts}
+\end{table}
+
