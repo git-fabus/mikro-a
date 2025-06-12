@@ -30,7 +30,7 @@
 
 \chapter{Nützliche Lösungswege}
 
-\section{Grundmodell: partielles Marktgleichgewicht}
+\section{partielles Marktgleichgewicht}
 
 Gegeben seien:
 \begin{itemize}
@@ -64,7 +64,7 @@ a - b p^* = c + d p^*
 Q^* = D(p^*) = a - b p^*
 \]
 
-\section{Offener Markt mit Weltmarktpreis}
+\subsection{Offener Markt mit Weltmarktpreis}
 
 Der Preis \( p_w \) ist exogen gegeben.
 Im Gleichgewicht:
@@ -77,7 +77,7 @@ Im Gleichgewicht:
     \]
 \end{itemize}
 
-\section{Markt mit Zoll}
+\subsection{Markt mit Zoll}
 
 Ein Zoll in Höhe von \( z \) erhöht den Konsumentenpreis:
 \[
@@ -97,7 +97,7 @@ Zolleinnahmen des Staates:
 T = z \times M_z
 \]
 
-\section{Markt mit Importquote}
+\subsection{Markt mit Importquote}
 
 Die Importe sind auf eine maximale Menge \( M_{\text{max}} \) begrenzt.
 
@@ -119,38 +119,20 @@ Anschließend:
     \item Importe: \( M_{\text{max}} \)
 \end{itemize}
 
-\section{Berechnung der Wohlfahrtsgrößen (optional)}
-
-\subsection*{Konsumentenrente}
+\subsection{Berechnung der Wohlfahrtsgrößen (optional)}
+Konsumentenrente ergibt sich als:
 \[
 KR = \int_0^{D(p)} \left[P(Q) - p \right] \, dQ
 \]
-
-\subsection*{Produzentenrente}
+Produzentenrente demnach als:
 \[
 PR = \int_0^{S(p)} \left[p - C(Q) \right] \, dQ
 \]
-
-\subsection*{Zolleinnahmen}
+Und die Zolleinnahmen als:
 \[
 T = z \times M_z
 \]
 
-\subsection*{Deadweight Loss (Wohlfahrtsverlust)}
 Wohlfahrtsverluste ergeben sich aus der Reduktion von Konsum und Handel im Vergleich zum Freihandel.
 
-\section{Zusammenfassung der Rechenwege}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{@{}lll@{}}
-\toprule
-Fall & Gleichung zur Preisfindung & Importmenge \\ \midrule
-Autark       & \( D(p) = S(p) \)                            & 0                         \\
-Freihandel   & exogener Preis \( p_w \)                     & \( D(p_w) - S(p_w) \)     \\
-Zoll \( z \) & Konsumentenpreis \( p_C = p_w + z \)         & \( D(p_w + z) - S(p_w) \) \\
-Quote        & \( D(p_Q) - S(p_Q) = M_{\text{max}} \)       & \( M_{\text{max}} \)      \\ \bottomrule
-\end{tabular}
-\caption{Formale Berechnungen des partiellen Gleichgewichts}
-\end{table}
 
