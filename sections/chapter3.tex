@@ -33,9 +33,19 @@ Menge ergibt sich dann aus der Nachfragefunktion.
 	wobei $D(p)$ die Nachfragefunktion und $c(D(p))$ die Kosten in Abhängigkeit der nachgefragten Menge ist.
 \end{construction}
 
-
-Inverse Nachfragefunktion tbd
-
+\begin{definition}
+    Die \defemph{inverse Nachfragefunktion} gibt für jede Menge $q$ an, zu welchem Preis $p(q)$ die Menge nachgefragt wird.
+\end{definition}
+\begin{example}
+Wenn $D(p) = \frac{100}{p+1}$ die Nachfragefunktion ist, dann können wir diese umstellen, um die Inversenachfragefunktion zu erhalten:
+\begin{align*}
+    q= \frac{100}{p+1} \iff p = \frac{100}{q} - 1
+.\end{align*}
+Demnach ist unsere inverse Nachfragefunktion
+\[
+p(q) = \frac{100}{q}-1
+.\] 
+\end{example}
 
 Analog kann man auch das Monopolistenproblem umformulieren.
 
@@ -53,3 +63,467 @@ Analog kann man auch das Monopolistenproblem umformulieren.
 		\operatorname{MR}(q)  = r'(q)
 		.\]
 \end{definition}
+
+
+
+
+\subsection{Preissetzungsstrategien}
+
+In diesem Kapitel betrachten wir verschiedene Preissetzungsstrategien, die einem Monopolisten zur Verfügung stehen. Insbesondere fokussieren wir uns auf die Konzepte der Preisdiskriminierung ersten, zweiten und dritten Grades sowie auf das sogenannte Bundling.
+
+Preisdiskriminierung bedeutet, dass ein Anbieter für identische oder sehr ähnliche Güter unterschiedlichen Käufern unterschiedliche Preise berechnet. Gründe dafür sind z.\,B.:
+
+\begin{itemize}
+    \item Unterschiedliche Zahlungsbereitschaften in verschiedenen Ländern.
+    \item Frühbucherrabatte bei Flugtickets.
+    \item Ermäßigungen für Studenten oder Senioren.
+    \item Rabatte für Großabnehmer.
+\end{itemize}
+
+\begin{example}
+Ein Kino verlangt für das gleiche Ticket von Studenten weniger als von Berufstätigen. Beide sehen denselben Film, zahlen aber unterschiedliche Preise.
+\end{example}
+
+
+\subsubsection{Preisdiskriminierung ersten Grades (perfekte Preisdiskriminierung)}
+Hierbei verlangt der Monopolist von jedem Konsumenten genau dessen maximale Zahlungsbereitschaft für eine Einheit des Gutes.
+
+Einige Eigenschaften sind:
+\begin{itemize}
+    \item Der gesamte Konsumentenrente wird vom Produzenten abgeschöpft.
+    \item Der Preis entspricht für jede verkaufte Einheit dem individuellen Nutzen des Käufers.
+    \item In der Praxis schwer umsetzbar, da der Anbieter die genaue Zahlungsbereitschaft jedes Kunden kennen müsste.
+\end{itemize}
+
+
+
+\begin{definition}
+Ein Monopolist betreibt \defemph{Preisdiskriminierung ersten Grades}, wenn er von jedem Konsumenten einen individuellen Preis $p_i$ verlangt, der exakt seiner individuellen Zahlungsbereitschaft $v_i$ für eine Einheit des Gutes entspricht:
+\[
+p_i = v_i \text{ für alle } i
+\]
+\end{definition}
+
+Damit wird die gesamte Konsumentenrente vom Produzenten abgeschöpft und die produzierte Menge entsprcht der effizienten Menge, es gilt also das der Preis den Grenzkosten entspricht. 
+
+
+\begin{example}
+Ein Kunstauktionator verkauft ein Gemälde zum Höchstgebot — jeder zahlt exakt das, was er maximal bereit ist, zu zahlen.
+\end{example}
+
+
+
+\subsubsection{Preisdiskriminierung zweiten Grades (Selbstselektion durch Angebotsmenüs)}
+
+Hier kennt der Monopolist die Zahlungsbereitschaften der einzelnen Konsumenten nicht, bietet aber verschiedene Optionen (z.\,B. unterschiedliche Qualitäten oder Mengen) an, sodass sich die Konsumenten selbst selektieren.
+
+\begin{definition}
+Ein Monopolist betreibt \defemph{Preisdiskriminierung zweiten Grades}, wenn er ein Menü aus Preis-Mengen- oder Preis-Qualitäts-Kombinationen anbietet, aus dem sich die Konsumenten entsprechend ihrer Zahlungsbereitschaft selbst selektieren.
+
+Formal:
+Der Monopolist bietet $n$ Tarife $(q_j, T_j)$ an, wobei $q_j$ die Menge/Qualität und $T_j$ der zugehörige Preis ist. Die Konsumenten wählen freiwillig das für sie optimale Angebot unter Beachtung von:
+
+\begin{itemize}
+    \item \textbf{Individueller Rationalität (IR)}: 
+    \[
+    v_i(q_j) - T_j \geq 0
+    \]
+    \item \textbf{Anreizkompatibilität (IC)}:
+    \[
+    v_i(q_j) - T_j \geq v_i(q_k) - T_k \text{ für alle } k \neq j
+    \]
+\end{itemize}
+\end{definition}
+
+\begin{example}
+   Eine Fluglinie bietet Economy- und First-Class-Tickets an, wobei Manager eine höhere Zahlungsbereitschaft haben als Touristen.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c}
+ & First Class & Economy \\
+\hline
+Kosten & 200 & 100 \\
+Wert für Manager & 600 & 300 \\
+Wert für Tourist & 250 & 200 \\
+\end{tabular}
+\caption{Kosten und Zahlungsbereitschaften}
+\end{table}
+
+Bedingungen für ein funktionierendes Preismenü:
+\begin{itemize}
+    \item \textbf{Individuelle Rationalität (IR):} Jeder Konsument bevorzugt es, ein Angebot zu kaufen, statt zu verzichten.
+    \item \textbf{Anreizkompatibilität (IC):} Manager sollen First Class und Touristen Economy bevorzugen.
+\end{itemize} 
+\end{example}
+
+
+\begin{example}
+Ein Softwarehersteller verkauft eine abgespeckte Light-Version günstiger als die Vollversion. Der Gelegenheitsnutzer nimmt die Light-Version, Profis kaufen die Vollversion.
+\end{example}
+
+\subsubsection{Preisdiskriminierung dritten Grades (Gruppenpreisdiskriminierung)}
+
+Der Monopolist kann Gruppen erkennen (z.\,B. durch Ausweise oder Mitgliedschaften) und verlangt von verschiedenen Gruppen unterschiedliche Preise, wobei innerhalb der Gruppe jeder denselben Preis zahlt.
+
+
+
+\begin{definition}
+Ein Monopolist betreibt \defemph{Preisdiskriminierung dritten Grades}, wenn er Konsumenten in identifizierbare Gruppen unterteilt (z.\,B. Studenten, Senioren) und jeder Gruppe einen eigenen Preis $p_g$ zuweist, wobei innerhalb einer Gruppe alle denselben Preis zahlen.
+
+Seien $G$ verschiedene Gruppen mit inversen Nachfragefunktionen $p_g(y_g)$ und Gesamtkosten $C(\sum_{g} y_g)$. Das Gewinnmaximum wird bestimmt durch:
+\[
+MR_g(y_g) = MC\left( \sum_{g} y_g \right)
+\]
+wobei 
+\[
+MR_g(y_g) = p_g(y_g) \left( 1 + \frac{1}{\varepsilon_g(y_g)} \right)
+\]
+mit $\varepsilon_g(y_g)$ der Preiselastizität der Nachfrage in Gruppe $g$.
+
+\noindent \emph{Preisregel:}
+Gruppen mit geringerer Preiselastizität zahlen einen höheren Preis:
+\[
+p_i > p_j \text{ genau dann, wenn } |\varepsilon_i| < |\varepsilon_j|
+\]
+\end{definition}
+
+
+\begin{example}
+Angenommen, es gibt zwei Gruppen mit folgender Nachfrage:
+\[
+D_1(p) = 100 - p, \quad D_2(p) = 100 - 2p
+\]
+Optimieren wir dies erhalten wir:
+\[
+MR_1(y_1) = MC, \quad MR_2(y_2) = MC
+\]
+Da Gruppen mit höherer Preiselastizität einen niedrigeren Preis zahlen.
+\end{example}
+
+\begin{example}
+Studenten zahlen im Theater 8 €, während Berufstätige 14 € bezahlen.
+\end{example}
+
+\subsubsection{Bundling (Preis-Bündelung)}
+
+Hierbei verkauft der Monopolist mehrere Produkte im Paket (Bundle) zu einem Preis, der insgesamt günstiger ist als der Kauf der Einzelprodukte.
+
+\begin{example}
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c|c}
+ & Textverarbeitung & Tabellenkalkulation & Bundle \\
+\hline
+Kunde A & 120 & 100 & 220 \\
+Kunde B & 100 & 120 & 220 \\
+\end{tabular}
+\caption{Zahlungsbereitschaften für Software}
+\end{table}
+
+\noindent
+Einzelverkauf: maximal 100 pro Produkt, Umsatz: 400. \\
+Bundle-Preis: 220, beide kaufen, Umsatz: 440.
+\end{example}
+
+\begin{example}
+Fast-Food-Ketten bieten Menüs günstiger an als die Summe der Einzelpreise. Ein Whopper-Menü kostet z.\,B. 6,49 €, während Burger, Fries und Getränk einzeln 7,50 € kosten würden.
+\end{example}
+
+
+
+
+\section{Spieltheorie}
+
+Wir haben uns bereits mit dem Preisverhalten eines Monopolisten
+beschäftigt. Nun wollen wir diese Analyse auf das Oligopol ausweiten, d.h.
+auf Märkte, in denen eine kleine Anzahl von Unternehmen tätig ist.
+
+\noindent Hier spielen strategische Überlegungen eine Rolle. 
+Betrachten wir den Smartphone-Markt: 
+Wenn Apple überlegt, welchen Preis es verlangen soll, ist entscheidend, welchen Preis es von Samsung erwartet. 
+Ebenso hängt Samsungs optimale Strategie von Apples Strategie ab.
+
+\noindent Um solche Situationen zu analysieren, benötigen wir Werkzeuge der Spieltheorie
+
+\begin{remark}
+Die Spieltheorie wird auch verwendet, um echte Spiele wie Poker zu analysieren.
+\end{remark}
+
+
+\begin{definition}[Spiel in Normalform]
+Ein \defemph{Spiel in Normalform} ist ein Tupel
+\[
+G = \left( N, (S_i)_{i \in N}, (u_i)_{i \in N} \right)
+\]
+mit:
+\begin{itemize}
+    \item einer endlichen Menge von Spielern $N = \{1, 2, \dots, n\}$,
+    \item für jeden Spieler $i \in N$ einer endlichen Menge von Strategien $S_i$,
+    \item für jeden Spieler $i \in N$ einer Auszahlungsfunktion
+    \[
+    u_i: S_1 \times S_2 \times \cdots \times S_n \rightarrow \mathbb{R}
+    \]
+    die jedem Strategieprofil die Auszahlung für Spieler $i$ zuordnet.
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Strategie]
+Eine \defemph{Strategie} $s_i \in S_i$ ist ein vollständiger Aktionsplan, der festlegt, welche Handlung Spieler $i$ in einer bestimmten Spielsituation wählt. Im Rahmen der Normalform entspricht eine Strategie der Wahl einer konkreten Aktion.
+\end{definition}
+
+\begin{definition}[Strategieprofil]
+Ein \defemph{Strategieprofil} ist ein Tupel
+\[
+s = (s_1, s_2, \dots, s_n) \in S_1 \times S_2 \times \cdots \times S_n
+\]
+das angibt, welche Strategie jeder Spieler im Spiel wählt.
+\end{definition}
+
+\begin{definition}[Auszahlungsfunktion]
+Die \defemph{Auszahlungsfunktion} $u_i$ ordnet jedem Strategieprofil $s$ einen reellen Wert $u_i(s)$ zu, der den Nutzen (Payoff) für Spieler $i$ angibt.
+\end{definition}
+
+\begin{definition}[Normalformmatrix]
+Bei Zwei-Personen-Spielen kann ein Spiel in \defemph{Normalformmatrix} dargestellt werden. Die Zeilen der Matrix entsprechen den Strategien von Spieler 1 und die Spalten den Strategien von Spieler 2. In jedem Feld der Matrix steht ein Auszahlungspaar
+\[
+(u_1, u_2)
+\]
+das angibt, welchen Payoff die beiden Spieler für das jeweilige Strategieprofil erhalten.
+\end{definition}
+
+\begin{example}
+Betrachten wir folgendes Zwei-Personen-Spiel:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c}
+ & \defemph{Links (L)} & \defemph{Rechts (R)} \\
+\hline
+\defemph{Oben (O)} & (3,2) & (0,0) \\
+\defemph{Unten (U)} & (1,1) & (2,3) \\
+\end{tabular}
+\caption{Normalformmatrix eines Zwei-Personen-Spiels}
+\end{table}
+
+\noindent
+Spieler 1 wählt zwischen \defemph{Oben (O)} und \defemph{Unten (U)}, Spieler 2 zwischen \defemph{Links (L)} und \defemph{Rechts (R)}.
+\end{example}
+
+\begin{definition}[Reine Strategie]
+Eine \defemph{reine Strategie} ist eine Strategie, bei der ein Spieler eine bestimmte Aktion mit Sicherheit wählt.
+\end{definition}
+
+\begin{definition}[Gemischte Strategie]
+Eine \defemph{gemischte Strategie} ist eine Wahrscheinlichkeitsverteilung über die reinen Strategien eines Spielers. Der Spieler wählt dabei zufällig eine reine Strategie gemäß dieser Wahrscheinlichkeitsverteilung.
+\end{definition}
+
+\begin{example}
+Wenn ein Spieler mit Wahrscheinlichkeit 0{,}7 die Strategie A und mit Wahrscheinlichkeit 0{,}3 die Strategie B wählt, verwendet er eine gemischte Strategie.
+\end{example}
+
+\begin{remark}
+Die \emph{Normalform} eignet sich insbesondere für simultane Spiele, bei denen alle Spieler ihre Entscheidungen gleichzeitig und ohne Kenntnis der Entscheidungen der anderen treffen. Für sequentielle Spiele, bei denen Spieler nacheinander handeln, wird die \emph{Extensivform} (Spielbaum) verwendet.
+\end{remark}
+
+\begin{definition}[Best Response]
+Die \defemph{Best Response} (beste Antwort) eines Spielers $i$ auf ein gegebenes Strategieprofil der anderen Spieler $s_{-i}$ ist diejenige Strategie $s_i^*$, die den Nutzen von Spieler $i$ maximiert, vorausgesetzt, die anderen Spieler spielen $s_{-i}$.
+
+Formal:
+\[
+BR_i(s_{-i}) = \left\{ s_i \in S_i \ \big| \ u_i(s_i, s_{-i}) \geq u_i(s_i', s_{-i}) \text{ für alle } s_i' \in S_i \right\}
+\]
+\end{definition}
+
+\noindent
+Eine Best Response ist also die optimale Strategie für einen Spieler, wenn die Strategien der anderen als gegeben betrachtet werden.
+
+\begin{example}
+Gegeben folgendes Zwei-Personen-Spiel:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c}
+ & \defemph{Links (L)} & \defemph{Rechts (R)} \\
+\hline
+\defemph{Oben (O)} & (2,2) & (0,3) \\
+\defemph{Unten (U)} & (3,0) & (1,1) \\
+\end{tabular}
+\caption{Normalformmatrix eines Zwei-Personen-Spiels}
+\end{table}
+
+\noindent
+\textbf{Best Responses:}
+\begin{itemize}
+    \item Wenn Spieler 2 \defemph{Links (L)} spielt, ist für Spieler 1 die Best Response: \defemph{Unten (U)}, da $3 > 2$.
+    \item Wenn Spieler 2 \defemph{Rechts (R)} spielt, ist für Spieler 1 die Best Response: \defemph{Oben (O)}, da $0 < 1$.
+    \item Analog für Spieler 2:
+    \begin{itemize}
+        \item Wenn Spieler 1 \defemph{Oben (O)} spielt, ist für Spieler 2 die Best Response: \defemph{Rechts (R)}, da $3 > 2$.
+        \item Wenn Spieler 1 \defemph{Unten (U)} spielt, ist für Spieler 2 die Best Response: \defemph{Links (L)}, da $0 < 1$.
+    \end{itemize}
+\end{itemize}
+\end{example}
+
+\begin{definition}[Best Response-Korrespondenz]
+Die \defemph{Best Response-Korrespondenz} $BR_i$ ordnet jedem möglichen Strategieprofil der anderen Spieler $s_{-i}$ die Menge aller besten Antworten von Spieler $i$ zu.
+\end{definition}
+
+
+\subsection{Nash-Gleichgewicht}
+
+Ein zentrales Konzept der Spieltheorie ist das sogenannte \defemph{Nash-Gleichgewicht}. Es beschreibt eine Situation, in der kein Spieler durch einseitiges Abweichen von seiner gewählten Strategie seinen eigenen Nutzen verbessern kann, vorausgesetzt, die Strategien der anderen Spieler bleiben unverändert.
+
+\begin{definition}[Nash-Gleichgewicht]
+Ein \defemph{Nash-Gleichgewicht} ist ein Strategieprofil
+\[
+s^* = (s_1^*, s_2^*, \dots, s_n^*)
+\]
+mit der Eigenschaft, dass für jeden Spieler $i \in N$ gilt:
+\[
+u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \text{ für alle } s_i \in S_i
+\]
+wobei $s_{-i}^*$ das Strategieprofil aller anderen Spieler außer Spieler $i$ bezeichnet.
+\end{definition}
+
+\noindent
+Das bedeutet: Gegeben die Strategien der anderen, ist es für keinen Spieler vorteilhaft, allein seine eigene Strategie zu ändern.
+
+\begin{example}
+Betrachten wir das folgende Zwei-Personen-Spiel:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c}
+ & \defemph{Links (L)} & \defemph{Rechts (R)} \\
+\hline
+\defemph{Oben (O)} & (2,2) & (0,3) \\
+\defemph{Unten (U)} & (3,0) & (1,1) \\
+\end{tabular}
+\caption{Normalformmatrix eines Zwei-Personen-Spiels}
+\end{table}
+
+\noindent
+Wir suchen die Nash-Gleichgewichte:
+\begin{itemize}
+    \item Wenn Spieler 2 \defemph{Links (L)} wählt, ist für Spieler 1 die beste Antwort \defemph{Unten (U)} (denn $3 > 2$).
+    \item Wenn Spieler 2 \defemph{Rechts (R)} wählt, ist für Spieler 1 die beste Antwort \defemph{Oben (O)} (denn $0 < 1$ also besser ist hier $1$).
+    \item Umgekehrt:
+    \begin{itemize}
+        \item Wenn Spieler 1 \defemph{Oben (O)} wählt, ist für Spieler 2 die beste Antwort \defemph{Rechts (R)} (denn $3 > 2$).
+        \item Wenn Spieler 1 \defemph{Unten (U)} wählt, ist für Spieler 2 die beste Antwort \defemph{Links (L)} (denn $0 < 1$ also $1$ besser).
+    \end{itemize}
+\end{itemize}
+
+\noindent
+Durch Gegenüberstellung der besten Antworten erhalten wir zwei Nash-Gleichgewichte:
+\[
+(O, R) \text{ und } (U, L)
+\]
+
+\noindent
+In diesen Kombinationen hat keiner der beiden Spieler einen Anreiz, einseitig von seiner Strategie abzuweichen.
+\end{example}
+
+
+\subsection{Oligopolmodelle: Cournot und Bertrand}
+In Oligopolmodellen konkurrieren wenige Anbieter auf einem Markt. Die bekanntesten Modelle sind das \defemph{Cournot-Modell} und das \defemph{Bertrand-Modell}, die sich durch die strategische Variable unterscheiden, die die Unternehmen wählen: Menge bzw. Preis.
+
+\subsubsection*{Cournot-Modell}
+
+\begin{definition}[Cournot-Modell]
+Im \defemph{Cournot-Modell} konkurrieren $n$ Unternehmen, indem sie simultan die produzierte Menge eines homogenen Gutes wählen. Der Marktpreis ergibt sich aus der gesamten angebotenen Menge durch eine inverse Nachfragefunktion.
+
+Formale Darstellung:
+\begin{itemize}
+    \item $n$ Unternehmen: $i = 1, \dots, n$
+    \item Strategie jedes Unternehmens: gewählte Menge $q_i \geq 0$
+    \item Marktpreis: $P(Q)$, wobei $Q = \sum_{i=1}^n q_i$
+    \item Gewinnfunktion von Unternehmen $i$:
+    \[
+    \pi_i(q_i, q_{-i}) = P\left( \sum_{j=1}^n q_j \right) \cdot q_i - C_i(q_i)
+    \]
+    wobei $C_i(q_i)$ die Kostenfunktion von Unternehmen $i$ ist.
+\end{itemize}
+\end{definition}
+
+\noindent
+Im Cournot-Modell wählt jedes Unternehmen seine Menge so, dass der eigene Gewinn maximiert wird, unter der Annahme, dass die Mengen der Konkurrenten als gegeben betrachtet werden.
+
+\begin{example}
+Zwei Unternehmen mit Kosten $C_i(q_i) = c \cdot q_i$ und linearer Nachfrage $P(Q) = a - bQ$.
+
+Gewinn von Unternehmen 1:
+\[
+\pi_1(q_1, q_2) = (a - b(q_1 + q_2)) \cdot q_1 - c \cdot q_1
+\]
+
+Best-Response-Funktion:
+\[
+BR_1(q_2) = \frac{a - c - b q_2}{2b}
+\]
+
+Analog für Unternehmen 2.
+Der Cournot-Nash-Gleichgewichtspunkt ist dort, wo sich die beiden Best-Response-Funktionen schneiden.
+\end{example}
+
+\vspace{0.5cm}
+
+\subsubsection*{Bertrand-Modell}
+
+\begin{definition}[Bertrand-Modell]
+Im \defemph{Bertrand-Modell} konkurrieren $n$ Unternehmen, indem sie simultan die Preise für ein homogenes Gut setzen. Die Konsumenten kaufen ausschließlich beim günstigsten Anbieter.
+
+Formale Darstellung:
+\begin{itemize}
+    \item $n$ Unternehmen: $i = 1, \dots, n$
+    \item Strategie jedes Unternehmens: gewählter Preis $p_i \geq 0$
+    \item Nachfrageverteilung:
+    \begin{itemize}
+        \item Unternehmen mit dem niedrigsten Preis erhält die gesamte Marktnachfrage.
+        \item Bei identischen Preisen wird die Nachfrage gleichmäßig aufgeteilt.
+    \end{itemize}
+    \item Gewinnfunktion von Unternehmen $i$:
+    \[
+    \pi_i(p_i, p_{-i}) =
+    \begin{cases}
+        (p_i - c) \cdot D(p_i) & \text{wenn } p_i < \min\limits_{j \neq i} p_j \\
+        \frac{1}{k} \cdot (p_i - c) \cdot D(p_i) & \text{wenn } p_i = p_j \text{ für } k \text{ Anbieter} \\
+        0 & \text{wenn } p_i > \min\limits_{j \neq i} p_j
+    \end{cases}
+    \]
+    wobei $c$ die Grenzkosten und $D(p)$ die Marktnachfrage ist.
+\end{itemize}
+\end{definition}
+
+\noindent
+Im Bertrand-Modell mit homogenen Gütern und identischen konstanten Grenzkosten lautet das \defemph{Bertrand-Paradoxon}:
+Bereits mit nur zwei Anbietern wird im Nash-Gleichgewicht der Preis auf das Niveau der Grenzkosten $c$ sinken, da jeder Anbieter einen Anreiz hat, den Konkurrenten geringfügig zu unterbieten, bis keine Gewinnmarge mehr möglich ist.
+
+\begin{example}
+Zwei Unternehmen mit Grenzkosten $c$ und linearer Nachfrage $D(p) = a - b p$.
+
+Wenn Unternehmen 1 und 2 Preise $p_1$ und $p_2$ setzen:
+\begin{itemize}
+    \item Wenn $p_1 < p_2$, verkauft Unternehmen 1 die gesamte Nachfrage $D(p_1)$.
+    \item Wenn $p_1 = p_2$, teilen sie sich die Nachfrage.
+    \item Wenn $p_1 > p_2$, verkauft Unternehmen 1 nichts.
+\end{itemize}
+
+Im Nash-Gleichgewicht:
+\[
+p_1^* = p_2^* = c
+\]
+Kein Unternehmen kann durch eine Preisänderung seinen Gewinn verbessern.
+\end{example}
+
+
+
+
+\section{Externe Effekte}
+
+
+
+
+
+
